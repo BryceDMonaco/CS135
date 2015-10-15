@@ -3,6 +3,8 @@
 	CS135-1201
 	
 	Magic Square
+	
+	Compile with: gcc magic_square.c -o magic -std=c99
 */
 
 #include <stdio.h>

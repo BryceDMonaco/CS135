@@ -1,3 +1,11 @@
+/*
+	Bryce Monaco
+	CS135-1201
+	
+	Scramble Sentence
+	Compile with: gcc scramble_sentence.c -o scram -std=c99
+*/
+
 #include <stdio.h>
 
 int main (void) {
@@ -117,7 +125,7 @@ int main (void) {
 		
 	}
 	
-	printf("\n------------Debug Info------------");
+	printf("\n\n------------Debug Info------------");
 	
 	printf("\nThere is a space at char number: ");
 	

@@ -1,3 +1,12 @@
+/*
+	Bryce Monaco
+	CS135-1201
+	
+	Scramble Sentence
+	
+	Compile with: gcc scramble_sentence.c -o scram -std=c99
+*/
+
 #include <stdio.h>
 
 int main (void) {
