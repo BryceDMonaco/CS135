@@ -13,14 +13,15 @@
 	//Woo globals
 	int colAmount = -1, rowAmount = -1;
 	int storageArray[500] = {0}; //This is needed to store any input
-
+	int intOccurance[10] = {0}; //Will be used at the end to count the occurance of 0 - 9
+	
 //Function Declarations
 int read_row (int rowNum, int colNum);
 int check_input (int checkInt);
+int compute_row_count (int value);
+int print_total_count (int countArray[10]); 
 
 int main (void) {
-	
-	int intOccurance[10] = {0}; //Will be used at the end to count the occurance of 0 - 9
 	
 	//Fill storageArray with placeholder values
 	for (int i = 0; i < 500; i++) {
@@ -64,7 +65,8 @@ int main (void) {
 			//Assign the array value to the next read value
 			digitArray[i][ii] = read_row(i, ii);
 			
-			intOccurance[digitArray[i][ii]] += 1;
+			//Pass the value to compute_row_count
+			compute_row_count(digitArray[i][ii]);
 		}
 	}
 	
@@ -80,17 +82,7 @@ int main (void) {
 		
 	}
 	
-	printf("Total count for each digit:\n");
-	
-	for (int ii = 0; ii < 10; ii++) {
-		if (intOccurance[ii] > 1 || intOccurance[ii] == 0) {
-			printf("Digit %d occurs %d times.\n", ii, intOccurance[ii]);
-		
-		} else {
-			printf("Digit %d occurs %d time.\n", ii, intOccurance[ii]);
-		
-		}
-	}
+	print_total_count(intOccurance);
 	
 	return 0;
 	
@@ -121,7 +113,7 @@ int read_row (int rowNum, int colNum) {
 					}
 					
 				} else {
-					printf("***%d is not an intenger between 0 and 9***\nEnter row %d values  (0 - 9, separated by spaces): ", inputCache, colNum);
+					printf("***%d is not an intenger between 0 and 9***\nEnter row %d values  (0 - 9, separated by spaces): ", inputCache, rowNum);
 					
 					isValid = 0;
 					
@@ -145,6 +137,7 @@ int read_row (int rowNum, int colNum) {
 
 }
 
+//A function to check if the integer input is between 0 and 9 inclusively
 int check_input (int checkInt) {
 	
 	if (checkInt >= 0 && checkInt <= 9) {
@@ -154,4 +147,27 @@ int check_input (int checkInt) {
 		return 0; //Return false
 	
 	}
+}
+
+//A function to count the amount of times each integer between 0 - 9 occurs
+int compute_row_count (int value) {
+	intOccurance[value] += 1;
+
+}
+
+int print_total_count (int countArray[10]) {
+	printf("Total count for each digit:\n");
+	
+	for (int ii = 0; ii < 10; ii++) {
+		if (countArray[ii] > 1 || countArray[ii] == 0) {
+			printf("Digit %d occurs %d times.\n", ii, countArray[ii]);
+		
+		} else {
+			printf("Digit %d occurs %d time.\n", ii, countArray[ii]);
+		
+		}
+	}
+	
+	return 1; //Just to return a value, should be discarded
+
 }
