@@ -1,3 +1,11 @@
+/*
+	Bryce Monaco
+	
+	This was a simple program written to help study calculus. The program will
+	randomly generate an amount of polynomials in the form of "ax^2+bx+c"
+
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 

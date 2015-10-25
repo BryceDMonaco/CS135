@@ -7,7 +7,7 @@ int main (void) {
 	while(1 > 0) {
 		
 		//Mod 20 to output a random number between [0, 19]
-		int firstCoef = rand() % 20, secondCoef = rand() % 20, thirdCoef = rand() % 20;
+		int firstCoef = rand() % 20, secondCoef = rand() % 20, thirdCoef = rand() % 5;
 		
 		//Check for coefficients of 0 and output accordingly
 		if (firstCoef == 0) {
