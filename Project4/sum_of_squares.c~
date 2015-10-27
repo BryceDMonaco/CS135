@@ -1,0 +1,39 @@
+/*
+	Bryce Monaco
+	CS135-1201
+	
+	An attempt at the challenge program
+
+*/
+
+#include <stdio.h>
+
+int main (void) {
+	int value, returnValue;
+	
+	printf("Please enter the value n for the sum of squared series: ");
+	scanf("%d", &value);
+	
+	returnValue = sum_squares(value);
+	
+	printf("The sum of squares from 1 to %d is: %d\n", value, returnValue);
+	
+	return 0;
+	
+
+}
+
+int sum_squares (int n) {
+	int valueSum = 0;
+	
+	if (n > 1) {
+		valueSum = (n*n) + sum_squares((n-1));	
+		
+		return valueSum;
+		
+	} else if (n == 1) {
+		return 1;
+	
+	}
+
+}
