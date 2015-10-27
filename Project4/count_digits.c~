@@ -19,7 +19,7 @@
 int read_row (int rowNum, int colNum);
 int check_input (int checkInt);
 int compute_row_count (int value);
-int print_total_count (countArray[10]); 
+int print_total_count (int countArray[10]); 
 
 int main (void) {
 	
@@ -155,7 +155,7 @@ int compute_row_count (int value) {
 
 }
 
-int print_total_count (countArray[10]) {
+int print_total_count (int countArray[10]) {
 	printf("Total count for each digit:\n");
 	
 	for (int ii = 0; ii < 10; ii++) {

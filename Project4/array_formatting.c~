@@ -18,8 +18,7 @@
 //Function Declarations
 int read_row (int rowNum, int colNum);
 int check_input (int checkInt);
-int format_row (int newLineAmt, int elementSpan, char justification, char betweenChar, int c, int thisRow[c]);
-int format_array (int newLineAmt, int elementSpan, char justification, char betweenChar, int colAmt, int rowAmt, int array[rowAmt][colAmt]);
+int format_row (int newLineAmt, int elementSpan, char justification, char betweenChar);
 int check_format (int requestedSize);
 
 int main (void) {
