@@ -1,3 +1,12 @@
+/*
+	Bryce Monaco
+	CS135 - 1201
+	Project 6 - Assignment 1
+	
+	Compile with "gcc combine_strings.c -std=c99 -o comb"
+	
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
