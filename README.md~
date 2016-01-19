@@ -8,4 +8,4 @@ abstract ways to meet a simple goal.
 
 Anything in "Misc" was not a class project, but was code that I wrote to help for other classes.
 
-Any files called "submission.json" are files left behind by an external program used in class to submit files. They can be ignored. Any files ending with a '~' can also be ignored as they are just backup files created by Ubuntu's gedit command
+Any files called "submission.json" are files left behind by an external program used in class to submit files. They can be ignored. Any files ending with a '~' can also be ignored as they are just backup files created by Ubuntu's gedit command.

@@ -1,5 +1,5 @@
 # CS135
-My projects for my CS135 class (Fall 2015)
+My projects for my CS135 class (Fall 2015 - Completed) (***This repository is closed***)
 
 Project specification and requirement sheets will be included with each project to show what
 challenges needed to be overcome to meet an objective. Seeing this requirements might explain
